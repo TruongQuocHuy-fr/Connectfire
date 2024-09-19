@@ -1,0 +1,21 @@
+[debug] [2024-09-18T07:09:41.445Z] ----------------------------------------------------------------------
+[debug] [2024-09-18T07:09:41.448Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\truon\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-18T07:09:41.448Z] CLI Version:   13.17.0
+[debug] [2024-09-18T07:09:41.449Z] Platform:      win32
+[debug] [2024-09-18T07:09:41.449Z] Node Version:  v20.17.0
+[debug] [2024-09-18T07:09:41.449Z] Time:          Wed Sep 18 2024 14:09:41 GMT+0700 (Indochina Time)
+[debug] [2024-09-18T07:09:41.449Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-18T07:09:41.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-18T07:09:41.455Z] > authorizing via signed-in user (2124801030025@student.tdmu.edu.vn)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\APP_DNT\ThucHanh\ConnectFirebase
+
