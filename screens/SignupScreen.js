@@ -20,14 +20,21 @@ export const SignupScreen =  ({ navigation })  => {
   } = useTogglePasswordVisibility();
   const handleSignup = async (values) => {
     const { email, password } = values;
-    // auth()
-    //   .
-      createUserWithEmailAndPassword(auth,email, password)
-      .then(
-        ()=>navigation.navigate('Login')
-        )        
-      .catch((error) => setErrorState(error.message));
+    try {
+      // Tạo tài khoản với email và mật khẩu
+      await createUserWithEmailAndPassword(auth, email, password);
+      // Nếu thành công, chuyển hướng sang màn hình Home
+      navigation.navigate('Home');
+    } catch (error) {
+      // Xử lý các lỗi từ Firebase
+      if (error.code === 'auth/email-already-in-use') {
+        setErrorState('This email has already been used. Please choose a different email.');
+      } else {
+        setErrorState(error.message);
+      }
+    }
   };
+  
   return (
     <View isSafe style={styles.container}>
       <KeyboardAwareScrollView enableOnAndroid={true}>
